@@ -1,0 +1,36 @@
+.header-component {
+  h1 {
+    font-size: 3rem;
+  }
+  p{
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  button {
+    background-color: $pink;
+    color: $white;
+    border: 1px solid $pink;
+    padding: 12px 1.5rem;
+    border-radius: 1.5rem;
+    font-weight: 500;
+  }
+  button:hover {
+    background-color: $white;
+    color: $pink;
+  }
+  img {
+    width: 100%;
+    animation: rotation 5s linear infinite alternate;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(-8deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(8deg);
+    }
+  }
+}

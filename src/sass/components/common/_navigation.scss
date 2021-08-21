@@ -1,0 +1,13 @@
+.navigation {
+  h1 {
+    color: $primary;
+  }
+  .navigation-link {
+    color: $primary !important;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .navigation-link:hover {
+    color: $pink !important;
+  }
+}
