@@ -1,0 +1,29 @@
+.specialization-card {
+  background-color: $lightpink;
+
+  .card-image {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  button {
+    height: 50px;
+    width: 50px;
+    background-color: $pink;
+    color: $white;
+    border: 1px solid $pink;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+  button:hover {
+    background-color: $white;
+    color: $pink;
+  }
+}
+.specialization-card:hover {
+  background-color: $gray;
+  border: 1px solid $pink;
+}

@@ -2,9 +2,9 @@ import { Spinner } from "react-bootstrap";
 
 const Fallback = () => {
     return (
-        <>
-            <Spinner animation="border" variant="warning" className="mt-5" />
-        </>
+        <div className="text-center mt-5">
+            <Spinner animation="border" variant="danger" className="mt-5" />
+        </div>
     );
 };
 
