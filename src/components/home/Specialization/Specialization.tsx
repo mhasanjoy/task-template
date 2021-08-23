@@ -28,7 +28,7 @@ const specializationData = [
 const Specialization = () => {
     return (
         <div className="my-5 py-5 specialization-component">
-            <h1 className="text-center mb-5">Our Specialization</h1>
+            <h1 className="text-center mb-5 pb-3">Our Specialization</h1>
             <Row className="align-items-stretch">
                 {
                     specializationData.map(data => <SpecializationCard key={data.id} data={data} />)

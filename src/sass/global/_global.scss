@@ -1,0 +1,27 @@
+.pink-btn {
+  background-color: $pink;
+  color: $white;
+  border: 1px solid $pink;
+  padding: 8px 1.5rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+}
+.pink-btn:hover {
+  background-color: $white;
+  color: $pink;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.title {
+  color: $pink;
+  font-weight: 500;
+}

@@ -1,11 +1,10 @@
 @import './abstract/variable';
 @import './overwrite/bootstrap';
 @import './global/reset';
+@import './global/global';
 @import './components/common/navigation';
-@import './components/common/footer';
 @import './components/home/header';
 @import './components/home/specializationCard';
-@import './components/home/specialization';
 @import './components/home/about';
 @import './components/home/feature';
 @import './components/home/featureCard';
@@ -20,3 +19,4 @@
 @import './components/home/serviceGroup';
 @import './components/home/marketingCard';
 @import './components/home/marketingDetails';
+@import './components/common/footer';

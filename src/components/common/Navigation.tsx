@@ -4,7 +4,7 @@ import { BiSearch } from 'react-icons/bi';
 
 const Navigation = () => {
   return (
-    <div className="bg-light navigation">
+    <div className="bg-light navigation-component">
       <Container>
         <Navbar expand="lg">
           <Navbar.Brand>
@@ -17,7 +17,7 @@ const Navigation = () => {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="ms-auto my-2 my-lg-0 gap-3"
-              style={{ maxHeight: '100px' }}
+              style={{ maxHeight: '200px' }}
               navbarScroll
             >
               <Nav.Link href="/" className="navigation-link">Home</Nav.Link>
@@ -49,7 +49,7 @@ const Navigation = () => {
                 className="mr-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success" className="navigation-btn"><BiSearch style={{fontSize: '1.5rem'}} /></Button>
+              <Button variant="outline-success" className="navigation-btn"><BiSearch style={{ fontSize: '1.5rem' }} /></Button>
             </Form>
           </Navbar.Collapse>
         </Navbar>
