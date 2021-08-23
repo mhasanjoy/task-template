@@ -16,7 +16,7 @@ const IndividualProject = (props: IProps) => {
             <Card className="individual-project">
                 <Card.Img variant="top" src={image} className="card-image" />
                 <Card.Body className="card-title">
-                    <Card.Title>{name}</Card.Title>
+                    <Card.Title className="d-flex justify-content-center">{name}</Card.Title>
                 </Card.Body>
             </Card>
         </Col>

@@ -36,7 +36,7 @@ const projectData = [
     {
         id: 6,
         image: pic16,
-        name: 'Digital marketing'
+        name: 'Digital Marketing'
     }
 ];
 
