@@ -1,0 +1,14 @@
+.individual-project {
+  .card-image {
+    width: 100%;
+  }
+  .card-title {
+    color: $primary;
+    text-align: center;
+  }
+}
+.individual-project:hover {
+  .card-title {
+    color: $pink;
+  }
+}
