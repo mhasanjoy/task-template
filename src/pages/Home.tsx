@@ -2,7 +2,9 @@ import About from "components/home/About/About"
 import Analysis from "components/home/Analysis/Analysis"
 import Features from "components/home/Features/Features"
 import Header from "components/home/Header/Header"
+import Newsletter from "components/home/Newsletter/Newsletter"
 import Projects from "components/home/Projects/Projects"
+import ServiceGroups from "components/home/ServiceGroups/ServiceGroups"
 import Specialization from "components/home/Specialization/Specialization"
 import Support from "components/home/Support/Support"
 import Team from "components/home/Team/Team"
@@ -21,6 +23,8 @@ const Home = () => {
             <Team />
             <Testimonial />
             <Analysis />
+            <ServiceGroups />
+            <Newsletter />
         </Container>
     );
 };

@@ -10,4 +10,12 @@
   .navigation-link:hover {
     color: $pink !important;
   }
+  .navigation-btn {
+    border: 1px solid $pink;
+    color: $pink;
+  }
+  .navigation-btn:hover {
+    background-color: $pink;
+    color: $white;
+  }
 }

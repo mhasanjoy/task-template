@@ -2,6 +2,7 @@
 @import './overwrite/bootstrap';
 @import './global/reset';
 @import './components/common/navigation';
+@import './components/common/footer';
 @import './components/home/header';
 @import './components/home/specializationCard';
 @import './components/home/specialization';
@@ -14,4 +15,6 @@
 @import './components/home/team';
 @import './components/home/memberCard';
 @import './components/home/testimonial';
-@import './components/home/analysis';
+@import './components/home/analysis'; 
+@import './components/home/newsletter';
+@import './components/home/serviceGroup';

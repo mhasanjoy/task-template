@@ -49,7 +49,7 @@ const Navigation = () => {
                 className="mr-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success"><BiSearch /></Button>
+              <Button variant="outline-success" className="navigation-btn"><BiSearch style={{fontSize: '1.5rem'}} /></Button>
             </Form>
           </Navbar.Collapse>
         </Navbar>

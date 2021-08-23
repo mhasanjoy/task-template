@@ -19,12 +19,13 @@
     padding: 0.5rem;
     border-radius: 50%;
   }
-  button:hover {
-    background-color: $white;
-    color: $pink;
-  }
 }
 .specialization-card:hover {
   background-color: $gray;
   border: 1px solid $pink;
+
+  button {
+    background-color: $white;
+    color: $pink;
+  }
 }
