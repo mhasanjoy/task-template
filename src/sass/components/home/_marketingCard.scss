@@ -1,0 +1,18 @@
+.marketing-card {
+  background-color: $gray;
+
+  .marketing-card-image {
+    width: 40%;
+  }
+  h6 {
+    padding: 10px 0;
+    color: $primary;
+  }
+}
+.marketing-card:hover {
+  cursor: pointer;
+
+  h6 {
+    color: $pink;
+  }
+}
