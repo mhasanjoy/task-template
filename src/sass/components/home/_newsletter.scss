@@ -1,20 +1,15 @@
 .newsletter-component {
-  h3 {
-    color: $primary;
-  }
   .subscribe-input {
     padding: 10px 15px;
     border: none;
   }
-  .subscribe-btn {
-    background-color: $pink;
-    color: $white;
+  .pink-btn {
     border: none;
     padding: 10px 1.5rem;
     border-radius: 5px;
-    font-weight: 500;
   }
-  .subscribe-btn:hover {
+  .pink-btn:hover {
     background-color: #152544;
+    color: white;
   }
 }

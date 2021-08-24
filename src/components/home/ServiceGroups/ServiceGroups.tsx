@@ -8,22 +8,22 @@ const ServiceGroups = () => {
     return (
         <div className="my-5 py-5 align-items-stretch service-group-component">
             <Row className="h-100">
-                <Col md={3}>
+                <Col lg={3} sm={6} className="py-3">
                     <Card className="group-image">
                         <Card.Img variant="top" src={pic23} />
                     </Card>
                 </Col>
-                <Col md={3}>
+                <Col lg={3} sm={6} className="py-3">
                     <Card className="group-image">
                         <Card.Img variant="top" src={pic24} />
                     </Card>
                 </Col>
-                <Col md={3}>
+                <Col lg={3} sm={6} className="py-3">
                     <Card className="group-image">
                         <Card.Img variant="top" src={pic25} />
                     </Card>
                 </Col>
-                <Col md={3}>
+                <Col lg={3} sm={6} className="py-3">
                     <Card className="group-image">
                         <Card.Img variant="top" src={pic26} />
                     </Card>

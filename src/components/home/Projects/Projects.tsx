@@ -42,7 +42,7 @@ const projectData = [
 
 const Projects = () => {
     return (
-        <div className="projects-container my-5 py-5">
+        <div className="my-5 py-5">
             <div className="text-center mb-5 pb-3">
                 <p className="title">PROJECTS</p>
                 <h1>Our Projects For Client</h1>

@@ -1,12 +1,4 @@
 .support-component {
-  .title {
-    color: $pink;
-    font-weight: 500;
-  }
-  h1,
-  h5 {
-    color: $primary;
-  }
   img {
     width: 100%;
   }
@@ -21,19 +13,7 @@
   .support:hover {
     .tick-btn {
       background-color: $pink;
-      color: $white;
+      color: white;
     }
-  }
-  .support-btn {
-    background-color: $pink;
-    color: $white;
-    border: 1px solid $pink;
-    padding: 8px 1.5rem;
-    border-radius: 1.5rem;
-    font-weight: 500;
-  }
-  .support-btn:hover {
-    background-color: $white;
-    color: $pink;
   }
 }

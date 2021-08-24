@@ -8,11 +8,18 @@
     width: 100%;
     padding: 5px;
   }
-  h3 {
-    color: $primary;
-  }
 }
 .feature-card:hover {
   background-color: $gray;
   border: 1px solid $pink;
+}
+@media (max-width: 576px) {
+  .feature-card {
+    text-align: center;
+
+    img {
+      width: 45%;
+      padding: 2rem;
+    }
+  }
 }

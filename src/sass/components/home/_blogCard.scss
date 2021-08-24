@@ -1,0 +1,16 @@
+.blog-card {
+  .pink-btn {
+    border-radius: 5px;
+  }
+}
+.blog-card:hover {
+  cursor: pointer;
+
+  .card-title {
+    color: $pink !important;
+  }
+  .pink-btn {
+    color: $pink;
+    background-color: white;
+  }
+}

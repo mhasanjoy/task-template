@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="footer-component">
                 <Container className="py-5">
                     <Row className="py-5 text-white">
-                        <Col md={4}>
+                        <Col xl={4} md={8} className="py-4">
                             <h5>About Us</h5>
                             <hr />
                             <p className="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
@@ -20,7 +20,7 @@ const Footer = () => {
                                 <button className="social-icon"><FaInstagram /></button>
                             </div>
                         </Col>
-                        <Col md={2}>
+                        <Col xl={2} md={4} className="py-4">
                             <h5>Important Links</h5>
                             <hr />
                             <p className="pt-3"><a href="#action13">About Us</a></p>
@@ -29,7 +29,7 @@ const Footer = () => {
                             <p><a href="#action16">Team</a></p>
                             <p><a href="#action17">Contact</a></p>
                         </Col>
-                        <Col md={2}>
+                        <Col xl={2} md={4} className="py-4">
                             <h5>Featured Service</h5>
                             <hr />
                             <p className="pt-3"><a href="#action18">SEO Marketing</a></p>
@@ -38,7 +38,7 @@ const Footer = () => {
                             <p><a href="#action21">Pay-Per-Click</a></p>
                             <p><a href="#action22">Social Media</a></p>
                         </Col>
-                        <Col md={4}>
+                        <Col xl={4} md={8} className="py-4">
                             <h5>Contact</h5>
                             <hr />
                             <div className="d-flex gap-3 pt-3 align-items-center">

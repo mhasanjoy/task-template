@@ -12,7 +12,7 @@ const IndividualProject = (props: IProps) => {
     const { image, name } = props.data;
 
     return (
-        <Col md={4} className="h-100 mb-5">
+        <Col xl={4} md={6} className="h-100 mb-5">
             <Card className="individual-project">
                 <Card.Img variant="top" src={image} className="card-image" />
                 <Card.Body className="card-title">

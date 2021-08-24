@@ -13,7 +13,7 @@ const MarketingCard = (props: IProps) => {
     const { image, name } = props.data;
 
     return (
-        <Col md={2}>
+        <Col xl={2} sm={6} md={4} className="py-2">
             <Card className="marketing-card justify-content-center align-items-center" onClick={() => props.handleClick(name)} >
                 <Card.Img variant="top" src={image} className="marketing-card-image p-2" />
                 <h6>{name}</h6>

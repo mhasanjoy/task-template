@@ -14,11 +14,11 @@ const FeatureCard = (props: IProps) => {
 
     return (
         <Row className="feature-card my-3 align-items-center">
-            <Col md={3}>
+            <Col sm={3} className="d-flex justify-content-center">
                 <img src={image} alt="" />
             </Col>
-            <Col md={9}>
-                <h3>{name}</h3>
+            <Col sm={9}>
+                <h3 className="text-primary">{name}</h3>
                 <p className="text-secondary">{description}</p>
             </Col>
         </Row>

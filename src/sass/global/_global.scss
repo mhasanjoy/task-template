@@ -1,13 +1,13 @@
 .pink-btn {
   background-color: $pink;
-  color: $white;
+  color: white;
   border: 1px solid $pink;
   padding: 8px 1.5rem;
   border-radius: 1.5rem;
   font-weight: 500;
 }
 .pink-btn:hover {
-  background-color: $white;
+  background-color: white;
   color: $pink;
 }
 @keyframes rotation {

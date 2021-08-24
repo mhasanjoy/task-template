@@ -19,6 +19,8 @@
   }
 }
 .individual-project:hover {
+  cursor: pointer;
+
   .card-image {
     transform: scale(1.2);
   }

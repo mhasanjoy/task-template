@@ -3,14 +3,14 @@ import pic22 from 'assets/images/pic22.png';
 
 const Analysis = () => {
     return (
-        <div className="my-5 py-5 analysis-component">
+        <div className="my-5 py-5">
             <Row className="align-items-center">
-                <Col md={6}>
-                    <img src={pic22} alt="Analysis Image" />
+                <Col lg={6}>
+                    <img src={pic22} alt="Analysis Image" className="w-100 py-3" />
                 </Col>
-                <Col md={6}>
+                <Col lg={6}>
                     <p className="title">ANALYSIS</p>
-                    <h1>Get Free SEO Analysis</h1>
+                    <h1 className="mb-3">Get Free SEO Analysis</h1>
                     <p className="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                     <form>
                         <Row className="py-2">
@@ -29,7 +29,7 @@ const Analysis = () => {
                                 <input type="text" name="website" placeholder="Website*" required className="form-control" />
                             </Col>
                         </Row>
-                        <input type="submit" value="Send Message" className="message-btn mt-3" />
+                        <input type="submit" value="Send Message" className="pink-btn mt-3" />
                     </form>
                 </Col>
             </Row>

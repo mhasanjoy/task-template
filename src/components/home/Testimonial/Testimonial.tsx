@@ -33,7 +33,7 @@ const Testimonial = () => {
                                 />
                                 <div>
                                     <p className="text-secondary">{testimonialData[0].description}</p>
-                                    <h5><AiOutlineMinus className="me-2" />{testimonialData[0].name}</h5>
+                                    <h5 className="text-primary"><AiOutlineMinus className="me-2" />{testimonialData[0].name}</h5>
                                 </div>
                             </div>
                         </Carousel.Item>
@@ -45,7 +45,7 @@ const Testimonial = () => {
                                 />
                                 <div>
                                     <p className="text-secondary">{testimonialData[1].description}</p>
-                                    <h5><AiOutlineMinus className="me-2" />{testimonialData[1].name}</h5>
+                                    <h5 className="text-primary"><AiOutlineMinus className="me-2" />{testimonialData[1].name}</h5>
                                 </div>
                             </div>
                         </Carousel.Item>

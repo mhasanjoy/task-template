@@ -1,21 +1,6 @@
 .feature-component {
-  h1 {
-    color: $primary;
-    text-align: center;
-  }
   .feature-image {
     width: 100%;
     animation: rotation 5s linear infinite alternate;
-  }
-  @keyframes rotation {
-    0% {
-      transform: rotate(-5deg);
-    }
-    50% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(5deg);
-    }
   }
 }

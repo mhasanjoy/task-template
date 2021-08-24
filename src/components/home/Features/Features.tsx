@@ -38,17 +38,17 @@ const featureData2 = [
 const Features = () => {
     return (
         <div className="my-5 py-5 feature-component align-items-stretch">
-            <h1 className="mb-5 pb-3">Our Features</h1>
+            <h1 className="mb-5 pb-3 text-center">Our Features</h1>
             <Row className="align-items-center h-100">
-                <Col md={4}>
+                <Col lg={4}>
                     {
                         featureData1.map(data => <FeatureCard key={data.id} data={data} />)
                     }
                 </Col>
-                <Col md={4}>
+                <Col lg={4}>
                     <img src={pic8} alt="Feature Image" className="feature-image" />
                 </Col>
-                <Col md={4}>
+                <Col lg={4}>
                     {
                         featureData2.map(data => <FeatureCard key={data.id} data={data} />)
                     }

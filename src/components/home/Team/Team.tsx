@@ -27,7 +27,7 @@ const teamData = [
 
 const Team = () => {
     return (
-        <div className="my-5 py-5 team-component">
+        <div className="my-5 py-5">
             <div className="text-center mb-5 pb-3">
                 <p className="title">TEAM</p>
                 <h1>Meet Our Team</h1>
