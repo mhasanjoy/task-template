@@ -52,14 +52,14 @@ const Footer = () => {
                                 <FaRegEnvelope />
                                 <div>
                                     <h6>Email</h6>
-                                    <a href="mailto:hello@neemo.com">hello@neemo.com</a>
+                                    <a href="mailto:hello@example.com">hello@example.com</a>
                                 </div>
                             </div>
                             <div className="d-flex gap-3 pt-3 align-items-center">
                                 <GoLocation />
                                 <div>
                                     <h6>Address</h6>
-                                    <p>123, Western Road, Melbourne Australia</p>
+                                    <p>Dhaka, Bangladesh</p>
                                 </div>
                             </div>
                         </Col>
