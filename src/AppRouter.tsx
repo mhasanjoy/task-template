@@ -8,7 +8,6 @@ import Fallback from 'components/common/Fallback';
 import Footer from 'components/common/Footer';
 import Navigation from 'components/common/Navigation';
 import ScrollToTop from 'components/common/ScrollToTop';
-import NoMatch from 'pages/NoMatch/NoMatch';
 const Home = React.lazy(() => import('pages/Home/Home'));
 const SingleService = React.lazy(() => import('pages/SingleService/SingleService'));
 const TermsConditions = React.lazy(() => import('pages/TermsConditons/TermsConditions'));
@@ -20,14 +19,15 @@ const AllProjects = React.lazy(() => import('pages/AllProjects/AllProjects'));
 const AboutUs = React.lazy(() => import('pages/AboutUs/AboutUs'));
 const ProjectsTwo = React.lazy(() => import('pages/ProjectsTwo/ProjectsTwo'));
 const ProjectDetails = React.lazy(() => import('pages/ProjectDetails/ProjectDetails'));
+const NoMatch = React.lazy(() => import('pages/NoMatch/NoMatch'));
 
-const AppRouter: React.FC = () => {
+const AppRouter = () => {
     return (
         <Router>
             <ScrollToTop />
             <Navigation />
-            <Switch>
-                <Suspense fallback={Fallback}>
+            <Suspense fallback={Fallback}>
+                <Switch>
                     <Route path="/home" component={Home} />
                     <Route path="/about-us" component={AboutUs} />
                     <Route path="/projects" component={AllProjects} />
@@ -40,9 +40,9 @@ const AppRouter: React.FC = () => {
                     <Route path="/terms-conditions" component={TermsConditions} />
                     <Route path="/privacy-policy" component={PrivacyPolicy} />
                     <Route exact path="/" component={Home} />
-                </Suspense>
-                <Route path="*" component={NoMatch} />
-            </Switch>
+                    <Route path="*" component={NoMatch} />
+                </Switch>
+            </Suspense>
             <Footer />
         </Router>
     );

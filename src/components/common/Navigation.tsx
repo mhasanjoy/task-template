@@ -21,16 +21,16 @@ const Navigation = () => {
               style={{ maxHeight: '200px' }}
               navbarScroll
             >
-              <Nav.Link className="navigation-link"><Link to='/home'>Home</Link></Nav.Link>
-              <Nav.Link className="navigation-link"><Link to='/about-us'>About</Link></Nav.Link>
+              <Nav.Link><Link to='/home' className="navigation-link">Home</Link></Nav.Link>
+              <Nav.Link><Link to='/about-us' className="navigation-link">About</Link></Nav.Link>
               <NavDropdown title="Services" id="navbarScrollingDropdown" className="navigation-link">
-                <NavDropdown.Item className="navigation-link"><Link to="/services">Services</Link></NavDropdown.Item>
-                <NavDropdown.Item className="navigation-link"><Link to="/single-service">Service Detail</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to="/services" className="navigation-link">Services</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to="/single-service" className="navigation-link">Service Detail</Link></NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Projects" id="navbarScrollingDropdown" className="navigation-link">
-                <NavDropdown.Item className="navigation-link"><Link to="/projects">Projects</Link></NavDropdown.Item>
-                <NavDropdown.Item className="navigation-link"><Link to="/projects-two">Projects Two</Link></NavDropdown.Item>
-                <NavDropdown.Item className="navigation-link"><Link to="/single-project">Project Detail</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to="/projects" className="navigation-link">Projects</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to="/projects-two" className="navigation-link">Projects Two</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to="/single-project" className="navigation-link">Project Detail</Link></NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Blog" id="navbarScrollingDropdown" className="navigation-link">
                 <NavDropdown.Item href="#action6" className="navigation-link">Blog</NavDropdown.Item>
