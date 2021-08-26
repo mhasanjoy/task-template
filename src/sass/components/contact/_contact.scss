@@ -1,0 +1,18 @@
+.contact-card:hover {
+  border: 1px solid $pink;
+
+  .contact-icon {
+    color: $pink;
+  }
+}
+.social-icon {
+  margin: 0 5px;
+  padding: 4px 8px;
+  border: 1px solid $pink;
+  border-radius: 50%;
+  color: $pink;
+}
+.social-icon:hover {
+  background-color: $pink;
+  color: white;
+}

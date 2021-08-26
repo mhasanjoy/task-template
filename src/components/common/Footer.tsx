@@ -24,20 +24,20 @@ const Footer = () => {
                         <Col xl={2} md={4} className="py-4">
                             <h5>Important Links</h5>
                             <hr />
-                            <p className="pt-3"><a href="#action13">About Us</a></p>
-                            <p><a href="#action14">Project</a></p>
-                            <p><a href="#action15">Services</a></p>
-                            <p><a href="#action16">Team</a></p>
-                            <p><a href="#action17">Contact</a></p>
+                            <p className="pt-3"><Link to='/about-us'>About Us</Link></p>
+                            <p><Link to="/projects">Project</Link></p>
+                            <p><Link to="/services">Services</Link></p>
+                            <p><Link to='/team'>Team</Link></p>
+                            <p><Link to='/contact'>Contact</Link></p>
                         </Col>
                         <Col xl={2} md={4} className="py-4">
                             <h5>Featured Service</h5>
                             <hr />
-                            <p className="pt-3"><a href="#action18">SEO Marketing</a></p>
-                            <p><a href="#action19">SEO Services</a></p>
-                            <p><a href="#action20">Services</a></p>
-                            <p><a href="#action21">Pay-Per-Click</a></p>
-                            <p><a href="#action22">Social Media</a></p>
+                            <p className="pt-3"><Link to='/single-service'>SEO Marketing</Link></p>
+                            <p><Link to='/single-service'>SEO Services</Link></p>
+                            <p><Link to='/single-service'>Services</Link></p>
+                            <p><Link to='/single-service'>Pay-Per-Click</Link></p>
+                            <p><Link to='/single-service'>Social Media</Link></p>
                         </Col>
                         <Col xl={4} md={8} className="py-4">
                             <h5>Contact</h5>

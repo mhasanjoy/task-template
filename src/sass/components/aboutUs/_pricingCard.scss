@@ -1,0 +1,25 @@
+.pricing-card {
+  background-color: $gray;
+
+  .tick-mark {
+    color: $pink;
+    margin-right: 5px;
+  }
+  .pink-btn {
+    width: 150px;
+  }
+}
+.pricing-card:hover {
+  background-color: $pink;
+
+  h3,
+  h1,
+  p,
+  .tick-mark {
+    color: white !important;
+  }
+  .pink-btn {
+    background-color: white;
+    color: $pink;
+  }
+}

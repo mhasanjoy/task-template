@@ -1,10 +1,11 @@
 import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import logo from 'assets/images/logo.png';
 import { BiSearch } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <div className="bg-light navigation-component">
+    <div className="bg-light navigation-component sticky-top">
       <Container>
         <Navbar expand="lg">
           <Navbar.Brand>
@@ -20,15 +21,16 @@ const Navigation = () => {
               style={{ maxHeight: '200px' }}
               navbarScroll
             >
-              <Nav.Link href="/" className="navigation-link">Home</Nav.Link>
-              <Nav.Link href="#action1" className="navigation-link">About</Nav.Link>
+              <Nav.Link className="navigation-link"><Link to='/home'>Home</Link></Nav.Link>
+              <Nav.Link className="navigation-link"><Link to='/about-us'>About</Link></Nav.Link>
               <NavDropdown title="Services" id="navbarScrollingDropdown" className="navigation-link">
-                <NavDropdown.Item href="#action2" className="navigation-link">Services</NavDropdown.Item>
-                <NavDropdown.Item href="#action3" className="navigation-link">Service Detail</NavDropdown.Item>
+                <NavDropdown.Item className="navigation-link"><Link to="/services">Services</Link></NavDropdown.Item>
+                <NavDropdown.Item className="navigation-link"><Link to="/single-service">Service Detail</Link></NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Projects" id="navbarScrollingDropdown" className="navigation-link">
-                <NavDropdown.Item href="#action4" className="navigation-link">Projects</NavDropdown.Item>
-                <NavDropdown.Item href="#action5" className="navigation-link">Project Detail</NavDropdown.Item>
+                <NavDropdown.Item className="navigation-link"><Link to="/projects">Projects</Link></NavDropdown.Item>
+                <NavDropdown.Item className="navigation-link"><Link to="/projects-two">Projects Two</Link></NavDropdown.Item>
+                <NavDropdown.Item className="navigation-link"><Link to="/single-project">Project Detail</Link></NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Blog" id="navbarScrollingDropdown" className="navigation-link">
                 <NavDropdown.Item href="#action6" className="navigation-link">Blog</NavDropdown.Item>
@@ -40,7 +42,7 @@ const Navigation = () => {
                 <NavDropdown.Item href="#action10" className="navigation-link">Pricing</NavDropdown.Item>
                 <NavDropdown.Item href="#action11" className="navigation-link">FAQ</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#action12" className="me-3 navigation-link">Contact</Nav.Link>
+              <Nav.Link className="me-3 navigation-link"><Link to="/contact">Contact</Link></Nav.Link>
             </Nav>
             <Form className="d-flex">
               <FormControl
