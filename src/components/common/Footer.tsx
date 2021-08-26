@@ -2,6 +2,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -41,21 +42,21 @@ const Footer = () => {
                         <Col xl={4} md={8} className="py-4">
                             <h5>Contact</h5>
                             <hr />
-                            <div className="d-flex gap-3 pt-3 align-items-center">
+                            <div className="d-flex gap-3 py-2 align-items-center">
                                 <FaPhoneAlt />
                                 <div>
                                     <h6>Phone</h6>
-                                    <a href="tel:(882) 569-7565">(882) 569-7565</a>
+                                    <p>(882) 569-7565</p>
                                 </div>
                             </div>
-                            <div className="d-flex gap-3 pt-3 align-items-center">
+                            <div className="d-flex gap-3 py-2 align-items-center">
                                 <FaRegEnvelope />
                                 <div>
                                     <h6>Email</h6>
-                                    <a href="mailto:hello@example.com">hello@example.com</a>
+                                    <p>hello@example.com</p>
                                 </div>
                             </div>
-                            <div className="d-flex gap-3 pt-3 align-items-center">
+                            <div className="d-flex gap-3 py-2 align-items-center">
                                 <GoLocation />
                                 <div>
                                     <h6>Address</h6>
@@ -70,8 +71,9 @@ const Footer = () => {
                 <Container className="py-4 d-flex align-items-center justify-content-between">
                     <p>&copy; {new Date().getFullYear()} Task. All Rights Reserved by Md. Mehedi Hasan</p>
                     <p>
-                        <a href="#action23">Terms &amp; Conditions </a>
-                        <a href="#action24">| Privacy Policy</a>
+                        <Link to='/terms-conditions'>Terms &amp; Conditions</Link>
+                        <span> | </span>
+                        <Link to='/privacy-policy'>Privacy Policy</Link>
                     </p>
                 </Container>
             </div>
