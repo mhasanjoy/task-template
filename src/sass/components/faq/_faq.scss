@@ -1,0 +1,13 @@
+.faq-component {
+  details summary {
+    cursor: pointer;
+    list-style: none;
+  }
+  details summary > * {
+    display: inline;
+  }
+  .faq-card {
+    background-color: $gray;
+    border: none;
+  }
+}

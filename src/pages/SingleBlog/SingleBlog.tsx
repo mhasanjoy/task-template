@@ -1,17 +1,19 @@
 import CommonHeader from 'components/common/CommonHeader';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import pic56 from 'assets/images/pic56.jpg';
 import pic57 from 'assets/images/pic57.jpg';
 import pic58 from 'assets/images/pic58.jpg';
 import pic59 from 'assets/images/pic59.jpg';
 import { BsFillBookmarkFill, BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { AiOutlineTwitter } from 'react-icons/ai';
+import { BiSearch } from 'react-icons/bi';
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import pic60 from 'assets/images/pic60.jpg';
 import pic61 from 'assets/images/pic61.jpg';
 import pic62 from 'assets/images/pic62.jpg';
 import pic63 from 'assets/images/pic63.jpg';
 import CommentCard from 'components/singleBlog/CommentCard';
+import RecentPostsCard from 'components/singleBlog/RecentPostsCard';
 
 const commentData = [
     {
@@ -41,6 +43,27 @@ const commentData = [
         name: 'Sarah Taylor',
         date: 'JANUARY 24, 2020 AT 10:59 AM',
         comment: 'Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+    }
+];
+
+const recentPostsData = [
+    {
+        id: 5,
+        image: pic57,
+        date: 'JUNE 10, 2020',
+        name: 'Making Peace With The Feast Or Famine Of Freelancing'
+    },
+    {
+        id: 6,
+        image: pic58,
+        date: 'JUNE 21, 2020',
+        name: 'I Used The Web For A Day On A 50 MB Budget'
+    },
+    {
+        id: 7,
+        image: pic59,
+        date: 'JUNE 30, 2020',
+        name: 'How To Create A Responsive Popup Gallery?'
     }
 ];
 
@@ -111,7 +134,33 @@ const SingleBlog = () => {
                         <button className="pink-btn my-3">POST A COMMENT</button>
                     </Col>
                     <Col md={4}>
-                        
+                        <div className="d-flex my-3">
+                            <input type="text" placeholder="Search..." className="form-control" />
+                            <Button variant="outline-success" className="pink-btn px-3"><BiSearch style={{ fontSize: '1.5rem' }} /></Button>
+                        </div>
+                        <h3 className="text-primary mt-5 mb-4">Recent Posts</h3>
+                        {
+                            recentPostsData.map(data => <RecentPostsCard key={data.id} data={data} />)
+                        }
+                        <h3 className="text-primary my-4">Categories</h3>
+                        <ul className="ms-4">
+                            <li className="text-highlight my-1">Business</li>
+                            <li className="text-highlight my-1">Privacy</li>
+                            <li className="text-highlight my-1">Technology</li>
+                            <li className="text-highlight my-1">Tips</li>
+                            <li className="text-highlight my-1">Uncategorized</li>
+                        </ul>
+                        <h3 className="text-primary my-4">Tags</h3>
+                        <ul className="list-unstyled d-flex flex-wrap">
+                            <li className="px-3 py-1 m-1 tags-list">IT (3)</li>
+                            <li className="px-3 py-1 m-1 tags-list">Crimso (3)</li>
+                            <li className="px-3 py-1 m-1 tags-list">Games (2)</li>
+                            <li className="px-3 py-1 m-1 tags-list">Fashion (2)</li>
+                            <li className="px-3 py-1 m-1 tags-list">Travel (1)</li>
+                            <li className="px-3 py-1 m-1 tags-list">Smart (1)</li>
+                            <li className="px-3 py-1 m-1 tags-list">Marketing (1)</li>
+                            <li className="px-3 py-1 m-1 tags-list">Tips (2)</li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>

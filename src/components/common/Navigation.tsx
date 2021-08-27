@@ -37,12 +37,13 @@ const Navigation = () => {
                 <NavDropdown.Item><Link to="/single-blog" className="navigation-link">Blog Detail</Link></NavDropdown.Item>
               </NavDropdown>
               <NavDropdown className="navigation-link" title="Pages" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action8" className="navigation-link">Features</NavDropdown.Item>
-                <NavDropdown.Item href="#action9" className="navigation-link">Team</NavDropdown.Item>
-                <NavDropdown.Item href="#action10" className="navigation-link">Pricing</NavDropdown.Item>
-                <NavDropdown.Item href="#action11" className="navigation-link">FAQ</NavDropdown.Item>
+                <NavDropdown.Item><Link to="/features" className="navigation-link">Features</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to="/team" className="navigation-link">Team</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to='/pricing' className="navigation-link">Pricing</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to='/faq' className="navigation-link">FAQ</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to="*" className="navigation-link">404 Error</Link></NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="me-3 navigation-link"><Link to="/contact">Contact</Link></Nav.Link>
+              <Nav.Link><Link to="/contact" className="me-3 navigation-link">Contact</Link></Nav.Link>
             </Nav>
             <Form className="d-flex">
               <FormControl

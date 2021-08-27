@@ -14,4 +14,9 @@
     color: white;
     background-color: #152544;
   }
+  .tags-list:hover {
+    background-color: $pink;
+    color: white;
+    cursor: pointer;
+  }
 }
