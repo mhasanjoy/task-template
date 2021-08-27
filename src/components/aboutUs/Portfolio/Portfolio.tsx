@@ -6,6 +6,7 @@ import pic52 from 'assets/images/pic52.png';
 import pic53 from 'assets/images/pic53.png';
 import pic54 from 'assets/images/pic54.png';
 import { Card, Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const portfolioData = [
     {
@@ -56,52 +57,66 @@ const Portfolio = () => {
             <div className="align-items-stretch">
                 <Row className="h-100">
                     <Col xl={4} md={6}>
-                        <Card className='individual-portfolio my-3'>
-                            <Card.Img variant="top" src={portfolioData[0].image} className="card-image" />
-                            <Card.Body className="card-title">
-                                <Card.Title className="d-flex justify-content-center">{portfolioData[0].name}</Card.Title>
-                            </Card.Body>
-                        </Card>
-                        <Card className='individual-portfolio my-3'>
-                            <Card.Img variant="top" src={portfolioData[3].image} className="card-image" />
-                            <Card.Body className="card-title">
-                                <Card.Title className="d-flex justify-content-center">{portfolioData[3].name}</Card.Title>
-                            </Card.Body>
-                        </Card>
+                        <Link to="/single-project">
+                            <Card className='individual-portfolio my-3'>
+                                <Card.Img variant="top" src={portfolioData[0].image} className="card-image" />
+                                <Card.Body className="card-title">
+                                    <Card.Title className="d-flex justify-content-center">{portfolioData[0].name}</Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </Link>
+                        <Link to='/single-project'>
+                            <Card className='individual-portfolio my-3'>
+                                <Card.Img variant="top" src={portfolioData[3].image} className="card-image" />
+                                <Card.Body className="card-title">
+                                    <Card.Title className="d-flex justify-content-center">{portfolioData[3].name}</Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </Link>
                     </Col>
                     <Col xl={4} md={6}>
-                        <Card className='individual-portfolio my-3'>
-                            <Card.Img variant="top" src={portfolioData[1].image} className="card-image" />
-                            <Card.Body className="card-title">
-                                <Card.Title className="d-flex justify-content-center">{portfolioData[1].name}</Card.Title>
-                            </Card.Body>
-                        </Card>
-                        <Card className='individual-portfolio my-3'>
-                            <Card.Img variant="top" src={portfolioData[4].image} className="card-image" />
-                            <Card.Body className="card-title">
-                                <Card.Title className="d-flex justify-content-center">{portfolioData[4].name}</Card.Title>
-                            </Card.Body>
-                        </Card>
-                        <Card className='individual-portfolio my-3'>
-                            <Card.Img variant="top" src={portfolioData[6].image} className="card-image" />
-                            <Card.Body className="card-title">
-                                <Card.Title className="d-flex justify-content-center">{portfolioData[6].name}</Card.Title>
-                            </Card.Body>
-                        </Card>
+                        <Link to='/single-project'>
+                            <Card className='individual-portfolio my-3'>
+                                <Card.Img variant="top" src={portfolioData[1].image} className="card-image" />
+                                <Card.Body className="card-title">
+                                    <Card.Title className="d-flex justify-content-center">{portfolioData[1].name}</Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </Link>
+                        <Link to='/single-project'>
+                            <Card className='individual-portfolio my-3'>
+                                <Card.Img variant="top" src={portfolioData[4].image} className="card-image" />
+                                <Card.Body className="card-title">
+                                    <Card.Title className="d-flex justify-content-center">{portfolioData[4].name}</Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </Link>
+                        <Link to='/single-project'>
+                            <Card className='individual-portfolio my-3'>
+                                <Card.Img variant="top" src={portfolioData[6].image} className="card-image" />
+                                <Card.Body className="card-title">
+                                    <Card.Title className="d-flex justify-content-center">{portfolioData[6].name}</Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </Link>
                     </Col>
                     <Col xl={4} md={6}>
-                        <Card className='individual-portfolio my-3'>
-                            <Card.Img variant="top" src={portfolioData[2].image} className="card-image" />
-                            <Card.Body className="card-title">
-                                <Card.Title className="d-flex justify-content-center">{portfolioData[2].name}</Card.Title>
-                            </Card.Body>
-                        </Card>
-                        <Card className='individual-portfolio my-3'>
-                            <Card.Img variant="top" src={portfolioData[5].image} className="card-image" />
-                            <Card.Body className="card-title">
-                                <Card.Title className="d-flex justify-content-center">{portfolioData[5].name}</Card.Title>
-                            </Card.Body>
-                        </Card>
+                        <Link to='/single-project'>
+                            <Card className='individual-portfolio my-3'>
+                                <Card.Img variant="top" src={portfolioData[2].image} className="card-image" />
+                                <Card.Body className="card-title">
+                                    <Card.Title className="d-flex justify-content-center">{portfolioData[2].name}</Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </Link>
+                        <Link to='/single-project'>
+                            <Card className='individual-portfolio my-3'>
+                                <Card.Img variant="top" src={portfolioData[5].image} className="card-image" />
+                                <Card.Body className="card-title">
+                                    <Card.Title className="d-flex justify-content-center">{portfolioData[5].name}</Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </Link>
                     </Col>
                 </Row>
             </div>

@@ -1,5 +1,6 @@
 import { Card, Col } from 'react-bootstrap';
 import { TiTick } from 'react-icons/ti';
+import { Link } from 'react-router-dom';
 
 interface IProps {
     data: {
@@ -23,7 +24,7 @@ const PricingCard = (props: IProps) => {
                 <p className="text-secondary"><TiTick className="tick-mark" />Link Building</p>
                 <p className="text-secondary"><TiTick className="tick-mark" />Site Migration</p>
                 <div className="m-4 justify-content-center">
-                    <button className="pink-btn">Get Started</button>
+                    <Link to='/pricing'><button className="pink-btn">Get Started</button></Link>
                 </div>
             </Card>
         </Col>
