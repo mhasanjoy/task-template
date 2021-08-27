@@ -33,8 +33,8 @@ const Navigation = () => {
                 <NavDropdown.Item><Link to="/single-project" className="navigation-link">Project Detail</Link></NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Blog" id="navbarScrollingDropdown" className="navigation-link">
-                <NavDropdown.Item href="#action6" className="navigation-link">Blog</NavDropdown.Item>
-                <NavDropdown.Item href="#action7" className="navigation-link">Blog Detail</NavDropdown.Item>
+                <NavDropdown.Item><Link to='/blog' className="navigation-link">Blog</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to="/single-blog" className="navigation-link">Blog Detail</Link></NavDropdown.Item>
               </NavDropdown>
               <NavDropdown className="navigation-link" title="Pages" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action8" className="navigation-link">Features</NavDropdown.Item>

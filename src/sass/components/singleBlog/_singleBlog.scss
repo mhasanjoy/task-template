@@ -1,0 +1,17 @@
+.single-blog-component {
+  .text-highlight:hover {
+    color: $pink !important;
+    cursor: pointer;
+  }
+  .pink-text {
+    color: $pink;
+  }
+  .pink-btn {
+    border: none;
+    border-radius: 5px;
+  }
+  .pink-btn:hover {
+    color: white;
+    background-color: #152544;
+  }
+}

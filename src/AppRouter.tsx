@@ -17,6 +17,8 @@ const WholeTeam = React.lazy(() => import('pages/WholeTeam/WholeTeam'));
 const Services = React.lazy(() => import('pages/Services/Services'));
 const AllProjects = React.lazy(() => import('pages/AllProjects/AllProjects'));
 const AboutUs = React.lazy(() => import('pages/AboutUs/AboutUs'));
+const AllBlogs = React.lazy(() => import('pages/AllBlogs/AllBlogs'));
+const SingleBlog = React.lazy(() => import('pages/SingleBlog/SingleBlog'));
 const ProjectsTwo = React.lazy(() => import('pages/ProjectsTwo/ProjectsTwo'));
 const ProjectDetails = React.lazy(() => import('pages/ProjectDetails/ProjectDetails'));
 const NoMatch = React.lazy(() => import('pages/NoMatch/NoMatch'));
@@ -34,6 +36,8 @@ const AppRouter = () => {
                     <Route path="/projects-two" component={ProjectsTwo} />
                     <Route path="/single-project" component={ProjectDetails} />
                     <Route path="/services" component={Services} />
+                    <Route path="/blog" component={AllBlogs} />
+                    <Route path="/single-blog" component={SingleBlog} />
                     <Route path="/team" component={WholeTeam} />
                     <Route path="/contact" component={Contact} />
                     <Route path="/single-service" component={SingleService} />
