@@ -32,7 +32,7 @@ const Contact = () => {
             <CommonHeader name='Contact' />
             <Container className="my-5 py-5">
                 <Row>
-                    <Col md={4}>
+                    <Col md={4} className="py-3">
                         <Card className="p-3 align-items-center contact-card">
                             <div className='d-flex gap-4 align-items-center'>
                                 {contactData[0].icon}
@@ -43,7 +43,7 @@ const Contact = () => {
                             </div>
                         </Card>
                     </Col>
-                    <Col md={4}>
+                    <Col md={4} className="py-3">
                         <Card className="p-3 align-items-center contact-card">
                             <div className='d-flex gap-4 align-items-center'>
                                 {contactData[1].icon}
@@ -54,7 +54,7 @@ const Contact = () => {
                             </div>
                         </Card>
                     </Col>
-                    <Col md={4}>
+                    <Col md={4} className="py-3">
                         <Card className="p-3 align-items-center contact-card">
                             <div className='d-flex gap-4 align-items-center'>
                                 {contactData[2].icon}
@@ -67,7 +67,7 @@ const Contact = () => {
                     </Col>
                 </Row>
                 <Row className="my-5 py-5 align-items-center">
-                    <Col md={6}>
+                    <Col md={6} className="py-3">
                         <h3 className="text-primary">Get in Touch</h3>
                         <p className="text-secondary">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tempus magna vel turpis pharetra dictum.</p>
                         <p className="text-secondary">Sed blandit tempus purus, sed sodales leo rutrum vel. Nam vulputate ipsum ac est congue, eget commodo magna lobortis.</p>
@@ -78,7 +78,7 @@ const Contact = () => {
                             <button className="social-icon"><FaInstagram /></button>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="py-3">
                         <input type="text" name="name" placeholder="Name" className="form-control py-2" required />
                         <input type="email" name="email" placeholder="Email" className="form-control my-3 py-2" required />
                         <input type="text" name="subject" placeholder="Subject" className="form-control py-2" required />

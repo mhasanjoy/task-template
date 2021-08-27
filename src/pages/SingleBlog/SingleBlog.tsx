@@ -73,7 +73,7 @@ const SingleBlog = () => {
             <CommonHeader name='Blog Details' />
             <Container className="my-5 py-5 single-blog-component">
                 <Row>
-                    <Col md={8}>
+                    <Col md={8} className="py-3">
                         <img src={pic56} alt="" className="w-100" />
                         <p className="text-primary mt-3"><strong>Posted On:</strong> January 02, 2021  -  <strong>Posted By:</strong> <span className="text-highlight">John Anderson</span></p>
                         <h3 className="text-primary">Why Business Absolutely Needs a Virtual Office</h3>
@@ -133,7 +133,7 @@ const SingleBlog = () => {
                         </div>
                         <button className="pink-btn my-3">POST A COMMENT</button>
                     </Col>
-                    <Col md={4}>
+                    <Col md={4} className="py-3">
                         <div className="d-flex my-3">
                             <input type="text" placeholder="Search..." className="form-control" />
                             <Button variant="outline-success" className="pink-btn px-3"><BiSearch style={{ fontSize: '1.5rem' }} /></Button>

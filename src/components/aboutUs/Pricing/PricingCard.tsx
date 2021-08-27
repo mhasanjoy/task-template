@@ -14,7 +14,7 @@ const PricingCard = (props: IProps) => {
     const { name, price } = props.data;
 
     return (
-        <Col md={4}>
+        <Col md={4} className="py-3">
             <Card className="pt-5 pricing-card">
                 <h3 className="text-primary">{name}</h3>
                 <h1>{price}</h1>

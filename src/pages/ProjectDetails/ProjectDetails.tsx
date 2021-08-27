@@ -10,12 +10,12 @@ const ProjectDetails = () => {
             <CommonHeader name="Project Details" />
             <Container className="my-5 py-5">
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} className="py-3">
                         <Card>
                             <img src={pic43} alt="" className="w-100" />
                         </Card>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="py-3">
                         <Card>
                             <img src={pic55} alt="" className="w-100" />
                         </Card>
@@ -36,19 +36,19 @@ const ProjectDetails = () => {
                     <p className="text-secondary">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section.</p>
                 </div>
                 <Row className="mt-5 align-items-center">
-                    <Col md={3}>
+                    <Col md={3} className="py-3">
                         <h5 className="text-primary">Client</h5>
                         <p className="text-secondary">James Anderson</p>
                     </Col>
-                    <Col md={3}>
+                    <Col md={3} className="py-3">
                         <h5 className="text-primary">Category</h5>
                         <p className="text-secondary">Network, Marketing</p>
                     </Col>
-                    <Col md={3}>
+                    <Col md={3} className="py-3">
                         <h5 className="text-primary">Date</h5>
                         <p className="text-secondary">February 28, 2021</p>
                     </Col>
-                    <Col md={3}>
+                    <Col md={3} className="py-3">
                         <button className="pink-btn">Live Preview</button>
                     </Col>
                 </Row>
