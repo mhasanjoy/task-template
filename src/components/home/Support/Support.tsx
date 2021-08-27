@@ -1,6 +1,7 @@
 import { Col, Row } from 'react-bootstrap';
 import pic10 from 'assets/images/pic10.png';
 import { TiTick } from 'react-icons/ti';
+import { Link } from 'react-router-dom';
 
 const Support = () => {
     return (
@@ -31,7 +32,7 @@ const Support = () => {
                             <p className="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor abore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <button className="my-4 pink-btn">Discover More</button>
+                    <Link to='/about-us'><button className="my-4 pink-btn">Discover More</button></Link>
                 </Col>
                 <Col lg={5}>
                     <img src={pic10} alt="Support Image" />

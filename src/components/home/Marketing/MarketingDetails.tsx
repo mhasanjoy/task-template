@@ -1,5 +1,6 @@
 import { Col, Row } from 'react-bootstrap';
 import pic30 from 'assets/images/pic30.png';
+import { Link } from 'react-router-dom';
 
 interface IProps {
     data: {
@@ -31,7 +32,7 @@ const MarketingDetails = (props: IProps) => {
                         <p className="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </Col>
                 </Row>
-                <button className="pink-btn">Discover More</button>
+                <Link to='/home'><button className="pink-btn">Discover More</button></Link>
             </Col>
         </Row>
     );

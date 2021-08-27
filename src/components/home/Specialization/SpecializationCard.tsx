@@ -1,5 +1,6 @@
 import { Card, Col } from 'react-bootstrap';
 import { RiArrowRightSLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 
 interface IProps {
     data: {
@@ -20,7 +21,7 @@ const SpecializationCard = (props: IProps) => {
                 <Card.Body className="text-center">
                     <Card.Title className="card-title">{name}</Card.Title>
                     <Card.Text className="text-secondary">{description}</Card.Text>
-                    <button className="mt-3"><RiArrowRightSLine style={{fontSize: '2rem'}} /></button>
+                    <Link to='/features'><button className="mt-3"><RiArrowRightSLine style={{fontSize: '2rem'}} /></button></Link>
                 </Card.Body>
             </Card>
         </Col>
